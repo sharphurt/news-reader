@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<fx:root type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <graphic>
+        <VBox>
+            <Label fx:id="titleLabel"/>
+            <Label fx:id="descriptionLabel"/>
+            <Label fx:id="publicationDateLabel"/>
+        </VBox>
+    </graphic>
+</fx:root>
