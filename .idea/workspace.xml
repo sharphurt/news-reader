@@ -4,38 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32847651-6921-42f9-af1e-ad980b15b2f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/NewsReaderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/client/NewsLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/client/NewsStorageClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/components/newscard/NewsCardComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/components/newscard/NewsCardFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/constants/ApplicationConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/ApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/NewsListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/domain/entity/News.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/dto/ClientResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/exception/UnsuccessfulResponseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/NewsListModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/NewsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/comparator/PublicationDateAscending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/serialization/ZonedDateTimeDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/serialization/ZonedDateTimeSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ru/sharphurt/newsreader/components/news-card.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ru/sharphurt/newsreader/forms/news-list-form.fxml" afterDir="false" />
+    <list default="true" id="32847651-6921-42f9-af1e-ad980b15b2f5" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/client/LoadingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/LoadingOverlayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/LoadingProcessModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ru/sharphurt/newsreader/components/loading-overlay.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/NewsReaderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/NewsReaderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/client/NewsLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/components/newscard/NewsCardComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/components/newscard/NewsCardComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/NewsListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/NewsListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/exception/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/NewsListModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/NewsListModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ru/sharphurt/newsreader/forms/news-list-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ru/sharphurt/newsreader/forms/news-list-form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +35,7 @@
       <list>
         <option value="Interface" />
         <option value="HTTP Request" />
+        <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -57,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -76,29 +65,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.HelloApplication.executor": "Run",
-    "Application.NewsReaderApplication.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sharphurt/IdeaProjects/news-reader/src/main/java/ru/sharphurt/newsreader",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewsReaderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sharphurt/IdeaProjects/news-reader/src/main/java/ru/sharphurt/newsreader&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sharphurt\IdeaProjects\news-reader\src\main\java\ru\sharphurt\newsreader" />
@@ -154,15 +143,40 @@
       <workItem from="1709327801558" duration="2068000" />
       <workItem from="1709330144079" duration="305000" />
       <workItem from="1709330622785" duration="1208000" />
-      <workItem from="1709332006186" duration="35187000" />
+      <workItem from="1709332006186" duration="49849000" />
+      <workItem from="1709663480405" duration="1752000" />
+      <workItem from="1709666394126" duration="6000" />
+      <workItem from="1709666421640" duration="362000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1709503819671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709503819671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -177,9 +191,19 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/controller/NewsListController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/sharphurt/newsreader/model/NewsListModel.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="28" />
+          <line>34</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21/javafx-base-21-win.jar!/javafx/collections/ModifiableObservableListBase.class</url>
+          <line>108</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

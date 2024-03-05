@@ -16,14 +16,15 @@ public abstract class ApplicationController<T> {
 
     public ApplicationController(T model, String viewResourceName) {
         this.model = model;
-        this.parent = loadFXML(viewResourceName);
+        this.parent = loadFXML(viewResourceName, null);
         initialize();
     }
 
-    private Parent loadFXML(String viewResourceName) {
+    private Parent loadFXML(String viewResourceName, ApplicationController<?> root) {
         try {
             var loader = new FXMLLoader(NewsReaderApplication.class.getResource(viewResourceName));
             loader.setController(this);
+            loader.setRoot(root);
             return loader.load();
         } catch (IOException e) {
             throw new RuntimeException(e);

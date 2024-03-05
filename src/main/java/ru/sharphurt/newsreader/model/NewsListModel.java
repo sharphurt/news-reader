@@ -6,14 +6,11 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.collections.FXCollections;
 import lombok.Getter;
-import ru.sharphurt.newsreader.client.NewsLoader;
 import ru.sharphurt.newsreader.domain.entity.News;
 import ru.sharphurt.newsreader.model.comparator.PublicationDateAscending;
 
 import java.util.Comparator;
 import java.util.List;
-
-import static ru.sharphurt.newsreader.constants.ApplicationConstants.NEWS_STORAGE_BASE_URL;
 
 @Getter
 public class NewsListModel {
@@ -21,16 +18,17 @@ public class NewsListModel {
     private final NewsModel currentNews;
     private final ListProperty<News> newsList;
     private final IntegerProperty currentNewsIndex;
-    private final NewsLoader newsLoader;
 
     public NewsListModel() {
-
         currentNews = new NewsModel();
         newsList = new SimpleListProperty<>(FXCollections.observableArrayList());
         currentNewsIndex = new SimpleIntegerProperty();
-        newsLoader = new NewsLoader(NEWS_STORAGE_BASE_URL);
+    }
 
-        newsLoader.getIsSuccessfullyLoaded().addListener((obs, oldValue, newValue) -> handleNewsLoading(newValue));
+    public void initializeWithNews(List<News> news) {
+        addNews(news);
+        sortNewsList(new PublicationDateAscending());
+        selectByIndex(0);
     }
 
     public void addNews(List<News> newsList) {
@@ -38,11 +36,14 @@ public class NewsListModel {
     }
 
     public void selectByIndex(int index) {
+        if (index < 0 || index > newsList.size())
+            return;
+
         currentNewsIndex.set(index);
         currentNews.setNewsData(newsList.get(index));
     }
 
-    private void sortNewsList(Comparator<News> comparator) {
+    public void sortNewsList(Comparator<News> comparator) {
         newsList.sort(comparator);
     }
 
@@ -60,14 +61,5 @@ public class NewsListModel {
 
         selectByIndex(currentNewsIndex.get() + 1);
         return true;
-    }
-
-    public void handleNewsLoading(boolean state) {
-        if (!state)
-            return;
-
-        addNews(newsLoader.getResult());
-        sortNewsList(new PublicationDateAscending());
-        selectByIndex(0);
     }
 }

@@ -9,7 +9,6 @@ module ru.sharphurt.newsreader {
     requires java.base;
     requires feign.core;
     requires feign.jackson;
-    requires org.slf4j;
 
     opens ru.sharphurt.newsreader to javafx.fxml;
     opens ru.sharphurt.newsreader.components.newscard to javafx.fxml;

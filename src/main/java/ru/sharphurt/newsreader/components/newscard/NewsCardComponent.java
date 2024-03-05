@@ -10,6 +10,8 @@ import ru.sharphurt.newsreader.domain.entity.News;
 
 import java.io.IOException;
 
+import static ru.sharphurt.newsreader.constants.ApplicationConstants.READABLE_DATE_TIME_FORMAT;
+
 public class NewsCardComponent extends ListCell<News> {
 
     @FXML
@@ -46,7 +48,7 @@ public class NewsCardComponent extends ListCell<News> {
         } else {
             titleLabel.setText(item.getTitle());
             descriptionLabel.setText(item.getDescription());
-            publicationDateLabel.setText(item.getPublicationDate().toString());
+            publicationDateLabel.setText(item.getPublicationDate().format(READABLE_DATE_TIME_FORMAT));
 
             setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
         }

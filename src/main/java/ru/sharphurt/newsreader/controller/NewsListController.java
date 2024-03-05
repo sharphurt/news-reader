@@ -1,8 +1,10 @@
 package ru.sharphurt.newsreader.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
 import ru.sharphurt.newsreader.components.newscard.NewsCardFactory;
 import ru.sharphurt.newsreader.domain.entity.News;
 import ru.sharphurt.newsreader.model.NewsListModel;
@@ -27,25 +29,20 @@ public class NewsListController extends ApplicationController<NewsListModel> {
     @FXML
     private ListView<News> newsListView;
 
-    @FXML
-    private VBox progressIndicator;
-
     public NewsListController(NewsListModel model) {
         super(model, "forms/news-list-form.fxml");
     }
 
     @Override
     public void initialize() {
-        super.initialize();
         attachEventHandlers();
+        super.initialize();
     }
 
     @Override
     protected void bind() {
         bindNewsList();
         bindNewsDetails();
-
-        progressIndicator.visibleProperty().bind(model.getNewsLoader().getIsSuccessfullyLoaded().not());
     }
 
     private void bindNewsList() {
